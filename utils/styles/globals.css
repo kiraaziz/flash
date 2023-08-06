@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Lexend;
+  src: url(./../assets/Lexend.ttf);
+}
+
+body {
+  font-family: Lexend;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 100px;
+}
+
+.firebase-emulator-warning{
+  display: none;
+}
+
+/* Markdown.css */
+
+.markdown h1 {
+  @apply text-2xl font-bold mb-4;
+}
+
+.markdown h2 {
+  @apply text-xl font-bold mb-3;
+}
+
+.markdown h3 {
+  @apply text-lg font-bold mb-2;
+}
+
+.markdown p {
+  @apply mb-4;
+}
+
+.markdown ul {
+  @apply list-disc pl-6 mb-4;
+}
+
+.markdown ol {
+  @apply list-decimal pl-6 mb-4;
+}
+
+.markdown li {
+  @apply ml-2;
+}
+
+.markdown a {
+  @apply text-blue-500 underline;
+}
+
+.markdown code{
+  @apply bg-base-300
+}
+
+#code{
+  @apply p-4 rounded-md ;
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.w-md-editor-toolbar {
+  @apply !bg-accent
+}
+
+.w-md-editor-content{
+  @apply !bg-base-200
+}
+
+.w-md-editor-toolbar-divider{
+   @apply !bg-white
+}
+
+.w-md-editor-toolbar  > ul > li > button{
+  @apply !text-white/80 hover:!bg-base-100 hover:!text-white
+}
